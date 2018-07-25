@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 JUL 2018 17:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  24 JUL 2018 21:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -593,14 +593,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 69.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 69.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 190.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 184.
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 190.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 184.
  (./tai_resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 190.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 190.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 184.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 184.
 Package rerunfilecheck Info: File `tai_resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
@@ -620,7 +620,7 @@ mf-dist/fonts/type1/public/lm/lmvtt10.pfb></usr/local/texlive/2017/texmf-dist/f
 onts/type1/public/tex-gyre/qplb.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
 ype1/public/tex-gyre/qplr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/p
 ublic/tex-gyre/qplri.pfb>
-Output written on tai_resume.pdf (1 page, 119165 bytes).
+Output written on tai_resume.pdf (1 page, 119181 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
