@@ -12,7 +12,7 @@
 \usepackage{enumitem}
 \usepackage{fontawesome5}
 
-% custom font
+% custom fonts
 \usepackage[T1]{fontenc}
 \usepackage{libertine}
 \usepackage{inconsolata}
@@ -20,7 +20,7 @@
 
 
 % formatting
-\geometry{verbose,tmargin=0.75in,bmargin=0.75in,lmargin=0.75in,rmargin=0.75in}
+\geometry{verbose,tmargin=0.7in,bmargin=0.7in,lmargin=0.7in,rmargin=0.7in}
 \setlength{\parskip}{\smallskipamount}
 \setlength{\parindent}{0pt}
 \setlist{nolistsep}
@@ -42,19 +42,25 @@
 
 \newcommand{\MONTH} {%
 	\ifcase\the\month
-	\or Jan % 1
-	\or Feb % 2
-	\or Mar % 3
-	\or Apr % 4
-	\or May % 5
-	\or Jun % 6
-	\or Jul % 7
-	\or Aug % 8
-	\or Sep % 9
-	\or Oct % 10
-	\or Nov % 11
-	\or Dec % 12
+	\or 01% 1
+	\or 02% 2
+	\or 03% 3
+	\or 04% 4
+	\or 05% 5
+	\or 06% 6
+	\or 07% 7
+	\or 08% 8
+	\or 09% 9
+	\or 10% 10
+	\or 11% 11
+	\or 12% 12
 	\fi
+}
+
+\newenvironment{sectionhead}[1] {
+    {\centering{\Large{\textsc{#1}}}\par}
+    \vspace{1mm}\hrule
+    \vspace{1mm}
 }
 
 %%==================================================%%
@@ -64,8 +70,8 @@
 
 \noindent{\makebox[0pt][l]{\hspace{0.2mm}\faLinkedin} \hspace{3.5mm}
 \makebox[0pt][l]{\textcolor{blue}{\href{https://www.linkedin.com/in/taicai/}{\texttt{linkedin.com/in/taicai}}}} \hfill
-\makebox[0pt][c]{\huge \fontfamily{LinuxLibertineT-OsF}\selectfont \textsc{-- Tianyi ``Tai'' Cai --}} \hfill
-\makebox[0pt][r]{Updated \MONTH \texttt{\the\year}} \hspace{3.5mm}
+\makebox[0pt][c]{\huge \fontfamily{LinuxLibertineT-OsF}\selectfont \textsc{-- Tianyi ``Tai'' Cai, PhD --}} \hfill
+\makebox[0pt][r]{Updated \texttt{\MONTH/\the\year}} \hspace{3.5mm}
 \makebox[0pt][r]{\faClock} \par
 }
 
@@ -83,48 +89,45 @@
 \makebox[0pt][r]{\faPhoneSquare\hspace{0.2mm}} \par
 }
 
-\vspace{5mm}
+\vspace{3mm}
 
 %%==================================================%%
 %%   SUMMARY SECTION                                %%
 %%==================================================%%
-{\centering{\Large{\textsc{Summary}}}\par}
-% {\fontfamily{qag}\selectfont{\centering\textsc{\Large{Summary}}\par}}
-\vspace{1mm}\hrule
-\vspace{1mm}
+\begin{sectionhead}{Summary}
+\end{sectionhead}
 
-\begin{description}[style=multiline,leftmargin=1.5in]
+\begin{description}[style=multiline,leftmargin=1.33in]
 \setlength\itemsep{1mm}
-\item [Experience]
-\item [Areas of Expertise] Bayesian statistics (causal inference, hierarchical models, model averaging, nonparametric theory) \\
-Classical statistics (mixed models, statistical learning, experimentation, asymptotic theory)
-\item [Current interests] Artificial neural networks, statistical properties of machine learning methods, ProjectEuler+
-\item [Frequently used] Python, \texttt{R}, SQL, Spark, Jupyter Notebook, Amazon S3, Amazon EC2, \LaTeX
-\item [Occasionally used] Tensorflow, Keras, Java, C++, HTML, CSS, Javascript
+    \item [Profile] $\cdot$ Experienced Data Scientist and Statistician working at the intersection of applied statistics, machine learning, research science, software engineering, and product management
+    \item [Areas of Expertise] $\cdot$ Data-driven software products and features put in production through cross-functional collaboration \\
+$\cdot$ Applied machine learning (data preparation, classification, regression, clustering, visualizations) \\
+$\cdot$ Bayesian statistics (causal inference, hierarchical models, model selection, nonparametric methods) \\
+$\cdot$ Classical statistics (experimentation, statistical learning, mixed models, time series)
+    \item [Current interests] $\cdot$ Statistical properties of machine learning methods, causal inference, ProjectEuler+
+    \item [Frequently used] $\cdot$ Python, \texttt{R}, SQL, Spark, Jupyter Notebook, Amazon S3, Amazon EC2, Vim, \LaTeX
+    \item [Used as necessary] $\cdot$ Tensorflow, Keras, Java, C++, HTML, CSS, Javascript
 \end{description}
 
-\vspace{5mm}
+\vspace{3mm}
 
 %%==================================================%%
 %%   EXPERIENCE SECTION                             %%
 %%==================================================%%
-% {\fontfamily{qag}\selectfont{\centering\textsc{\Large{Experience}}\par}}
-{\centering{\Large{\textsc{Experience}}}\par}
-\vspace{1mm}\hrule
-\vspace{1mm}
+\begin{sectionhead}{Experience}
+\end{sectionhead}
 
 %%==================================================%%
 %%   BITSIGHT                                       %%
 %%==================================================%%
 \textbf{Senior Data Scientist}, BitSight \hfill \textit{Boston MA} \texttt{\quad 10/2017-Present}
 \begin{itemize}
-\item Oversee all data science requirements for third-party risk management projects through cross-functional collaboration in designing metrics, building prototypes, deploying machine learning models, and communicating results to stakeholders
-\item Design observational studies to evaluate the association and causality of relationships pertaining to efficacy of products, impact of extraneous events, and influence of internal interventions
-\item Supervised data science intern working on sales/marketing analytics and external data validation
-\item Lead reading groups covering advanced topics in forecasting methods, prediction intervals, and model evaluation metrics
-\item Program Python scripts and modules for data storage, collection, cleaning, analysis, and visualization
-\item Promoted from Data Scientist on 02/2019 for exceeding expectations in all major projects
-\item talk about released products \href{https://www.bitsight.com/press-releases/bitsight-announces-enterprise-analytics-help-security-risk-leaders-manage-cyber-risk}{Enterprise Analytics}
+    \item Oversee all data science projects for third-party cybersecurity risk management through designing metrics, researching methods, building prototypes, writing and reviewing production code, and communicating results to stakeholders
+    \item Shipped multiple new software products and features (including 1 patent pending), working as the sole data scientist in collaboration with engineering, product, customer success, marketing, and sales teams
+    \item Designed observational studies to evaluate the association and causality of relationships pertaining to efficacy of products, impact of extraneous events, and influence of internal interventions
+    \item Supervised Master's-level intern working on 1. validation of external financial data and 2. sales and marketing analytics
+    \item Led reading groups covering advanced topics in forecasting methods, prediction intervals, and model evaluation metrics
+    \item Promoted from Data Scientist on 02/2019 for exceeding expectations across all major projects
 \end{itemize}
 
 \vspace{1mm}
@@ -132,22 +135,11 @@ Classical statistics (mixed models, statistical learning, experimentation, asymp
 %%==================================================%%
 %%   INSIGHT DATA SCIENCE                           %%
 %%==================================================%%
-\textbf{Technical Advisor}, Insight Data Science \hfill \textit{Boston MA} \texttt{\quad 05/2019-09/2019}
+\textbf{Technical Advisor, Alumni Mentor, Data Science Fellow}, Insight Data Science \hfill \textit{Boston MA} \texttt{\quad 05/2017-09/2019}
 \begin{itemize}
-\item Mentored data science projects for 4 PhD graduates/postdoctoral fellows by providing weekly 1-on-1 feedback on project ideation/viability, data considerations, modeling techniques, and communication skills
-\item Conducted mock interviews covering topics in computer science, machine learning, statistics, and case studies
-\end{itemize}
-
-\vspace{1mm}
-
-%%==================================================%%
-%%   INSIGHT DATA SCIENCE                           %%
-%%==================================================%%
-\textbf{Data Science Fellow}, Insight Data Science \hfill \textit{Boston MA} \texttt{\quad 05/2017-09/2017}
-\begin{itemize}
-\item Generated idea for predicting supply/demand at Hubway bike-sharing stations in Boston, despite a lack of labeled data
-\item Consolidated and cleaned multiple data sources to tally labeled information for 200 bike stations over 11 million time points
-\item Predicted and visualized real-time supply/demand for each bike station using various machine learning and statistical models
+    \item (As Technical Advisor) Mentored data science projects for 4 PhD graduates and postdoctoral fellows by providing weekly 1-on-1 feedback on project ideation/viability, data considerations, modeling techniques, and communication skills
+    \item (As Alumni Mentor) Conducted mock interviews covering computer science, machine learning, statistics, and case studies
+    \item (As Data Science Fellow) Consolidated and cleaned multiple data sources to tally millions of labeled data points to predict and visualize real-time supply and demand for Hubway bikes at 200 bike-sharing stations
 \end{itemize}
 
 \vspace{1mm}
@@ -157,10 +149,10 @@ Classical statistics (mixed models, statistical learning, experimentation, asymp
 %%==================================================%%
 \textbf{PhD Student, Research Assistant}, Harvard University \hfill \textit{Cambridge MA} \texttt{\quad 08/2012-09/2017}
 \begin{itemize}
-\item Conducted original statistical research on applied problems in genetics, health care policy, and end-of-life care
-\item Developed novel \texttt{R} code for handling datasets with complexities such as sampling bias, misclassified outcomes, correlated outcomes, hierarchical structures, and confounding
-\item Taught graduate-level labs with topics ranging from introductory statistics to seminar topics in Bayesian nonparametrics, decision theory, and sequential methods
-\item Selected to tutor fellow PhD students for the biostatistics written qualifying exam
+    \item Conducted original statistical research on applied problems in genetics, health care policy, and end-of-life care
+    \item Developed novel \texttt{R} code for handling datasets with complexities such as sampling bias, misclassified outcomes, correlated outcomes, hierarchical structures, and confounding
+    \item Taught graduate-level classes with topics ranging from introductory statistics to seminar topics in Bayesian nonparametrics, decision theory, and sequential methods
+    \item Selected to tutor fellow PhD students for the biostatistics written qualifying exam
 \end{itemize}
 
 \vspace{1mm}
@@ -170,38 +162,31 @@ Classical statistics (mixed models, statistical learning, experimentation, asymp
 %%==================================================%%
 \textbf{Full-time Co-op Work Semesters}, University of Waterloo \hfill \textit{Waterloo ON} \texttt{\quad 05/2008-12/2011}
 \begin{itemize}
-\item Completed six semesters (two years) of full-time work at Munich Re, Manulife, Hewitt Associates, and Logitech
-\item Applied statistical and actuarial methods to problems in biometric research, enterprise risk management, segregated fund valuation, group benefits pricing, pension administration, and database analysis
+    \item Completed six semesters (two years) of full-time work at Munich Re, Manulife, Hewitt Associates, and Logitech
+    \item Applied statistical and actuarial methods to problems in biometric research, enterprise risk management, segregated fund valuation, group benefits pricing, pension administration, and database analysis
 \end{itemize}
 
-\vspace{5mm}
+\vspace{3mm}
 
 %%==================================================%%
 %%   EDUCATION SECTION                              %%
 %%==================================================%%
-% {\fontfamily{qag}\selectfont{\centering\textsc{\Large{Education}}\par}}
-{\centering{\Large{\textsc{Education}}}\par}
-\vspace{1mm}\hrule
-\vspace{1mm}
+\begin{sectionhead}{Education}
+\end{sectionhead}
 
 \textbf{PhD, Biostatistics}, Harvard University \hfill \textit{Cambridge MA} \texttt{\quad \phantom{00/0000-00/}2017}
 \begin{itemize}
-\item Thesis: Statistical Methods for the Analysis of Observational Data with Multiple Correlated Outcomes
-\item Advisors: Tianxi Cai, Francesca Dominici
+    \item Thesis: Statistical Methods for the Analysis of Observational Data with Multiple Correlated Outcomes
 \end{itemize}
-
-\vspace{1mm}
 
 \textbf{Bachelor of Mathematics}, University of Waterloo \hfill \textit{Waterloo ON} \texttt{\quad \phantom{00/0000-00/}2012}
 \begin{itemize}
-\item Honours Actuarial Science/Finance Option, Honours Statistics, Co-operative
-Program
+    \item Honours Actuarial Science/Finance Option, Honours Statistics
+    \item Graduated With Distinction - Dean's Honours List
 \end{itemize}
 
-\vspace{1mm}
-\vspace{1mm}\hrule
-\vspace{1mm}
+\textbf{Deep Learning Specialization}, deeplearning.ai \hfill \textit{Coursera} \texttt{\quad \phantom{00/0000-00/}2018}
 
-\textbf{Deep Learning Specialization}, deeplearning.ai \hfill \textit{Coursera} \texttt{\quad \phantom{00/0000-00/}2018} \\
 \textbf{Associate of the Society of Actuaries}, Society of Actuaries \hfill \textit{Schaumburg IL} \texttt{\quad \phantom{00/0000-00/}2012}
+
 \end{document}
