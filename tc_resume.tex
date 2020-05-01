@@ -20,7 +20,7 @@
 
 
 % formatting
-\geometry{verbose,tmargin=0.7in,bmargin=0.7in,lmargin=0.7in,rmargin=0.7in}
+\geometry{verbose,tmargin=0.75in,bmargin=0.75in,lmargin=0.75in,rmargin=0.75in}
 \setlength{\parskip}{\smallskipamount}
 \setlength{\parindent}{0pt}
 \setlist{nolistsep}
@@ -70,21 +70,22 @@
 
 \noindent{\makebox[0pt][l]{\hspace{0.2mm}\faLinkedin} \hspace{3.5mm}
 \makebox[0pt][l]{\textcolor{blue}{\href{https://www.linkedin.com/in/taicai/}{\texttt{linkedin.com/in/taicai}}}} \hfill
-\makebox[0pt][c]{\huge \fontfamily{LinuxLibertineT-OsF}\selectfont \textsc{-- Tianyi ``Tai'' Cai, PhD --}} \hfill
+\makebox[0pt][c]{\LARGE \textsc{-- Tai Cai, PhD --}} \hfill
+%% \makebox[0pt][c]{\LARGE \fontfamily{LinuxLibertineT-OsF}\selectfont \textsc{-- Tai Cai, PhD --}} \hfill
 \makebox[0pt][r]{Updated \texttt{\MONTH/\the\year}} \hspace{3.5mm}
 \makebox[0pt][r]{\faClock} \par
 }
 
 \noindent{\makebox[0pt][l]{\faGithub} \hspace{3.5mm}
 \makebox[0pt][l]{\textcolor{blue}{\href{https://github.com/caikitlearn}{\texttt{github.com/caikitlearn}}}} \hfill
-\makebox[0pt][c]{Canadian Citizen with H-1B} \hfill
+\makebox[0pt][c]{\textcolor{blue}{\href{https://www.caikitlearn.com}{\texttt{caikitlearn.com}}}} \hfill
 \makebox[0pt][r]{\textcolor{blue}{\href{mailto:tcai@mail.harvard.edu}{\texttt{tcai@mail.harvard.edu}}}} \hspace{3.5mm}
 \makebox[0pt][r]{\faEnvelopeSquare\hspace{0.2mm}} \par
 }
 
 \noindent{\makebox[0pt][l]{\faHackerrank} \hspace{3.5mm}
 \makebox[0pt][l]{\textcolor{blue}{\href{https://hackerrank.com/caikitlearn}{\texttt{hackerrank.com/caikitlearn}}}} \hfill
-\makebox[0pt][c]{\textcolor{blue}{\href{https://www.caikitlearn.com}{\texttt{caikitlearn.com}}}} \hfill
+\makebox[0pt][c]{Canadian Citizen | US Permanent Resident} \hfill
 \makebox[0pt][r]{\texttt{(857) 998-8619}} \hspace{3.5mm}
 \makebox[0pt][r]{\faPhoneSquare\hspace{0.2mm}} \par
 }
@@ -99,14 +100,14 @@
 
 \begin{description}[style=multiline,leftmargin=1.33in]
 \setlength\itemsep{1mm}
-    \item [Profile] $\cdot$ Experienced Data Scientist and Statistician working at the intersection of applied statistics, machine learning, research science, software engineering, and product management
-    \item [Areas of Expertise] $\cdot$ Data-driven software products and features put in production via cross-functional collaboration \\
-$\cdot$ Applied machine learning (data preparation, classification, regression, clustering, visualizations) \\
-$\cdot$ Bayesian statistics (causal inference, hierarchical models, model selection, nonparametric methods) \\
-$\cdot$ Classical statistics (experimentation, statistical learning, mixed models, time series)
-    \item [Current interests] $\cdot$ Statistical properties of machine learning methods, causal inference, ProjectEuler+
-    \item [Frequently used] $\cdot$ Python, \texttt{R}, SQL, Spark, Jupyter Notebook, Amazon S3, Amazon EC2, Vim, \LaTeX
-    \item [Used as necessary] $\cdot$ Tensorflow, Keras, Java, C++, HTML, CSS, Javascript
+\item [Profile] 					  $\cdot$ Quantitative scientist working at the intersection of statistics/machine learning, data/software \\
+                					  {\color{white}$\cdot$} engineering, research science, and product management
+\item [Areas of Expertise]  $\cdot$ Cross-functional collaboration to productionize/engineer data-driven products and features \\
+													  $\cdot$ Bayesian statistics (causal inference, hierarchical models, model selection, nonparametric methods) \\
+													  $\cdot$ Classical statistics (statistical learning, experimental design, mixed models, time series) \\
+													  $\cdot$ Deep learning (artificial/recurrent/convolutional neural networks)
+\item [Frequently Used]     $\cdot$ Python, Tensorflow, Keras, LightGBM, \texttt{R}, SQL, Spark, jupyter, Vim, \LaTeX
+\item [Sometimes Used]      $\cdot$ Java, C++, HTML, CSS, Javascript
 \end{description}
 
 \vspace{3mm}
@@ -118,16 +119,32 @@ $\cdot$ Classical statistics (experimentation, statistical learning, mixed model
 \end{sectionhead}
 
 %%==================================================%%
+%%   UBER                                           %%
+%%==================================================%%
+\textbf{Data Scientist II}, Uber \hfill \textit{San Francisco CA} \texttt{\quad 01/2020-Present}
+\begin{itemize}
+    \item Engineered an ensemble of predictive models using internal and third-party data to identify rare user groups for multi-million dollar experiments; improved legacy model performance by a factor of 2
+		\item Analyzed the aforementioned experiments to identify statistically significant metrics, while identifying the limitations of the existing experimental design to improve future allocation of resources
+		\item Estimated point and interval values of competitive intelligence metrics used in executive decision making
+		\item Identified and corrected multiple mistakes and inefficiencies found in the team repository, ranging from production code to deliverables used by stakeholders
+\end{itemize}
+
+\vspace{1mm}
+
+%%==================================================%%
 %%   BITSIGHT                                       %%
 %%==================================================%%
-\textbf{Senior Data Scientist}, BitSight \hfill \textit{Boston MA} \texttt{\quad 10/2017-Present}
+\textbf{Senior Data Scientist}, BitSight \hfill \textit{Boston MA} \texttt{\quad 10/2017-01/2020}
 \begin{itemize}
-    \item Lead all data science projects for third-party cybersecurity risk management through designing metrics, researching methods, building prototypes, writing and reviewing production code, and communicating results to stakeholders and customers
-    \item Ship new software products and features (including 1 patent pending), working as the sole data scientist in collaboration with engineering, product, customer success, marketing, and sales teams
-    \item Design observational studies to evaluate the association and causality of relationships pertaining to efficacy of products, impact of extraneous events, and influence of internal interventions
-    \item Organize reading groups covering advanced topics in forecasting methods, prediction intervals, and model evaluation metrics
-    \item Supervised Master's-level intern working on 1) validation of external financial data and 2) sales and marketing analytics
-    \item Promoted from Data Scientist on 02/2019 for exceeding expectations across all projects
+		\item Led all data science projects for third-party cybersecurity risk management, including:
+		\begin{itemize}
+				\item Tier Recommender, BitSight's first machine learning based product, which leverages unique network data
+				\item Enterprise Analytics, a product that identifies high risk areas by computing and evaluating hypothetical risk scenarios
+				\item Fourth-Party Risk Management, a tool that provides visibility into business ecosystems
+		\end{itemize}
+    \item Designed observational studies to evaluate the association and causality of relationships pertaining to efficacy of products, impact of extraneous events, and influence of internal interventions
+		\item Supervised Master's-level intern working on 1) validation of external financial data and 2) sales and marketing analytics
+		\item Organized reading groups covering advanced topics in forecasting, prediction intervals, and model evaluation
 \end{itemize}
 
 \vspace{1mm}
@@ -135,35 +152,10 @@ $\cdot$ Classical statistics (experimentation, statistical learning, mixed model
 %%==================================================%%
 %%   INSIGHT DATA SCIENCE                           %%
 %%==================================================%%
-\textbf{Technical Advisor, Alumni Mentor, Data Science Fellow}, Insight Data Science \hfill \textit{Boston MA} \texttt{\quad 05/2017-09/2019}
+\textbf{Technical Advisor, Data Science Fellow}, Insight Data Science \hfill \textit{Boston MA} \texttt{\quad 05/2017-09/2019}
 \begin{itemize}
     \item As Technical Advisor: Mentored data science projects for PhD graduates and postdoctoral fellows by providing weekly 1-on-1 feedback on project ideation/viability, data considerations, modeling techniques, and communication skills
-    \item As Alumni Mentor: Administered mock interviews covering computer science, machine learning, statistics, and case studies
     \item As Data Science Fellow: Consolidated and cleaned multiple data sources to tally millions of labeled data points to predict and visualize real-time supply and demand for Hubway bikes at 200 bike-sharing stations
-\end{itemize}
-
-\vspace{1mm}
-
-%%==================================================%%
-%%   HARVARD UNIVERSITY                             %%
-%%==================================================%%
-\textbf{PhD Student, Research Assistant}, Harvard University \hfill \textit{Cambridge MA} \texttt{\quad 08/2012-09/2017}
-\begin{itemize}
-    \item Conducted original statistical research on applied problems in genetics, health care policy, and end-of-life care
-    \item Developed novel \texttt{R} code for handling datasets with complexities such as sampling bias, misclassified outcomes, correlated outcomes, hierarchical structures, and confounding
-    \item Taught graduate-level classes with topics ranging from introductory statistics to seminar topics in Bayesian nonparametrics, decision theory, and sequential methods
-    \item Selected to tutor fellow PhD students for the biostatistics written qualifying exam
-\end{itemize}
-
-\vspace{1mm}
-
-%%==================================================%%
-%%   UNIVERSITY OF WATERLOO                         %%
-%%==================================================%%
-\textbf{Full-time Co-op Work Semesters}, University of Waterloo \hfill \textit{Waterloo ON} \texttt{\quad 05/2008-12/2011}
-\begin{itemize}
-    \item Completed six semesters (two years) of full-time work at Munich Re, Manulife, Hewitt Associates, and Logitech
-    \item Applied statistical and actuarial methods to problems in biometric research, enterprise risk management, segregated fund valuation, group benefits pricing, pension administration, and database analysis
 \end{itemize}
 
 \vspace{3mm}
@@ -176,17 +168,30 @@ $\cdot$ Classical statistics (experimentation, statistical learning, mixed model
 
 \textbf{PhD, Biostatistics}, Harvard University \hfill \textit{Cambridge MA} \texttt{\quad \phantom{00/0000-00/}2017}
 \begin{itemize}
-    \item Thesis: Statistical Methods for the Analysis of Observational Data with Multiple Correlated Outcomes
+	  \item Conducted and published statistical research on applied problems in genetics, health care policy, and end-of-life care
+	  \item Developed novel \texttt{R} code for handling sampling bias, misclassified outcomes, correlated outcomes, intractable cross-validation, hierarchical structures, and confounding
+	  \item Taught graduate-level classes in introductory statistics/epidemiology, statistical methods, and Bayesian statistics
 \end{itemize}
 
-\textbf{Bachelor of Mathematics}, University of Waterloo \hfill \textit{Waterloo ON} \texttt{\quad \phantom{00/0000-00/}2012}
+\textbf{BMath, Statistics and Actuarial Science}, University of Waterloo \hfill \textit{Waterloo ON} \texttt{\quad \phantom{00/0000-00/}2012}
 \begin{itemize}
-    \item Honours Actuarial Science/Finance Option, Honours Statistics
-    \item Graduated with Distinction - Dean's Honours List
+		\item Graduated with Distinction - Dean's Honours List (Highest Honors)
+		\item Completed six work semesters at Logitech, Hewitt Associates (now Blackstone), Manulife Financial, and Munich Re
 \end{itemize}
 
-\textbf{Deep Learning Specialization}, deeplearning.ai \hfill \textit{Coursera} \texttt{\quad \phantom{00/0000-00/}2018}
+\vspace{3mm}
 
-\textbf{Associate of the Society of Actuaries}, Society of Actuaries \hfill \textit{Schaumburg IL} \texttt{\quad \phantom{00/0000-00/}2012}
+%%==================================================%%
+%%   PERSONAL PROJECTS SECTION                      %%
+%%==================================================%%
+\begin{sectionhead}{Personal Projects}
+\end{sectionhead}
+
+\begin{description}[style=multiline,leftmargin=1.33in]
+\setlength\itemsep{1mm}
+\item [Stephen A.I. Smith]  $\cdot$ Twitter bot trained on Stephen A. Smith's tweets, using transfer learning via Open AI's GPT-2 model, \\
+													  {\color{white}$\cdot$} GloVe Twitter embeddings, and a Bidirectional LSTM model for scoring generated tweets
+\item [CRISPR-be-deep]      $\cdot$ Exploring gene editing data using convolutional and recurrent neural networks
+\end{description}
 
 \end{document}
