@@ -28,12 +28,12 @@
 \pagenumbering{gobble}
 
 \AtBeginDocument {
-	\def\labelitemi{\(\cdot\)}
-	\def\labelitemii{\(\cdot\)}
+    \def\labelitemi{\(\cdot\)}
+    \def\labelitemii{\(\cdot\)}
 }
 
 \newcommand\textbox[1] {%
-	\parbox{.3333333333\textwidth}{#1}%
+    \parbox{.3333333333\textwidth}{#1}%
 }
 
 \newcommand\halfbox[1] {%
@@ -41,20 +41,20 @@
 }
 
 \newcommand{\MONTH} {%
-	\ifcase\the\month
-	\or 01% 1
-	\or 02% 2
-	\or 03% 3
-	\or 04% 4
-	\or 05% 5
-	\or 06% 6
-	\or 07% 7
-	\or 08% 8
-	\or 09% 9
-	\or 10% 10
-	\or 11% 11
-	\or 12% 12
-	\fi
+    \ifcase\the\month
+    \or 01% 1
+    \or 02% 2
+    \or 03% 3
+    \or 04% 4
+    \or 05% 5
+    \or 06% 6
+    \or 07% 7
+    \or 08% 8
+    \or 09% 9
+    \or 10% 10
+    \or 11% 11
+    \or 12% 12
+    \fi
 }
 
 \newcommand{\sectionbreak} {
@@ -76,26 +76,28 @@
 %%==================================================%%
 \begin{document}
 
-\noindent{\makebox[0pt][l]{\hspace{0.2mm}\faLinkedin} \hspace{3.5mm}
-\makebox[0pt][l]{\textcolor{blue}{\href{https://www.linkedin.com/in/taicai/}{\texttt{linkedin.com/in/taicai}}}} \hfill
-\makebox[0pt][c]{\LARGE \textsc{-- Tai Cai, PhD --}} \hfill
-%% \makebox[0pt][c]{\LARGE \fontfamily{LinuxLibertineT-OsF}\selectfont \textsc{-- Tai Cai, PhD --}} \hfill
-\makebox[0pt][r]{Updated \texttt{\MONTH/\the\year}} \hspace{3.5mm}
-\makebox[0pt][r]{\faClock} \par
+\noindent{
+    \makebox[0pt][l]{\hspace{0.2mm}\faLinkedin} \hspace{3.5mm}
+    \makebox[0pt][l]{\textcolor{blue}{\href{https://www.linkedin.com/in/taicai/}{\texttt{linkedin.com/in/taicai}}}} \hfill
+    \makebox[0pt][c]{\LARGE \textsc{-- Tai Cai, PhD --}} \hfill
+    \makebox[0pt][r]{Updated \texttt{\MONTH/\the\year}} \hspace{3.5mm}
+    \makebox[0pt][r]{\faClock} \par
 }
 
-\noindent{\makebox[0pt][l]{\faGithub} \hspace{3.5mm}
-\makebox[0pt][l]{\textcolor{blue}{\href{https://github.com/caikitlearn}{\texttt{github.com/caikitlearn}}}} \hfill
-\makebox[0pt][c]{\textcolor{blue}{\href{https://www.caikitlearn.com}{\texttt{caikitlearn.com}}}} \hfill
-\makebox[0pt][r]{\textcolor{blue}{\href{mailto:tcai@mail.harvard.edu}{\texttt{tcai@mail.harvard.edu}}}} \hspace{3.5mm}
-\makebox[0pt][r]{\faEnvelopeSquare\hspace{0.2mm}} \par
+\noindent{
+    \makebox[0pt][l]{\faGithub} \hspace{3.5mm}
+    \makebox[0pt][l]{\textcolor{blue}{\href{https://github.com/caikitlearn}{\texttt{github.com/caikitlearn}}}} \hfill
+    \makebox[0pt][c]{\textcolor{blue}{\href{https://www.caikitlearn.com}{\texttt{caikitlearn.com}}}} \hfill
+    \makebox[0pt][r]{\textcolor{blue}{\href{mailto:tcai@mail.harvard.edu}{\texttt{tcai@mail.harvard.edu}}}} \hspace{3.5mm}
+    \makebox[0pt][r]{\faEnvelopeSquare\hspace{0.2mm}} \par
 }
 
-\noindent{\makebox[0pt][l]{\faHackerrank} \hspace{3.5mm}
-\makebox[0pt][l]{\textcolor{blue}{\href{https://hackerrank.com/caikitlearn}{\texttt{hackerrank.com/caikitlearn}}}} \hfill
-\makebox[0pt][c]{Canadian Citizen | US Permanent Resident} \hfill
-\makebox[0pt][r]{\texttt{(857) 998-8619}} \hspace{3.5mm}
-\makebox[0pt][r]{\faPhoneSquare\hspace{0.2mm}} \par
+\noindent{
+    \makebox[0pt][l]{\faHackerrank} \hspace{3.5mm}
+    \makebox[0pt][l]{\textcolor{blue}{\href{https://hackerrank.com/caikitlearn}{\texttt{hackerrank.com/caikitlearn}}}} \hfill
+    \makebox[0pt][c]{Canadian Citizen | US Permanent Resident} \hfill
+    \makebox[0pt][r]{\texttt{(857) 998-8619}} \hspace{3.5mm}
+    \makebox[0pt][r]{\faPhoneSquare\hspace{0.2mm}} \par
 }
 
 \sectionbreak
@@ -108,12 +110,12 @@
 
 \begin{description}[style=multiline,leftmargin=1.33in]
 \setlength\itemsep{1mm}
-\item [Profile] 					  $\cdot$ Quantitative scientist working at the intersection of applied statistics, machine learning, research \\
-                					  {\color{white}$\cdot$} science, software engineering, and product management
+\item [Profile]             $\cdot$ Quantitative scientist working at the intersection of applied statistics, machine learning, research \\
+                			        {\color{white}$\cdot$} science, software engineering, and product management
 \item [Areas of Expertise]  $\cdot$ Cross-functional collaboration to productionize/engineer data-driven products and features \\
-													  $\cdot$ Bayesian statistics (causal inference, hierarchical models, model selection, nonparametric methods) \\
-													  $\cdot$ Classical statistics (statistical learning, experimental design, mixed models, time series) \\
-													  $\cdot$ Deep learning (artificial/recurrent/convolutional neural networks)
+                            $\cdot$ Bayesian statistics (causal inference, hierarchical models, model selection, nonparametric methods) \\
+							$\cdot$ Classical statistics (statistical learning, experimental design, mixed models, time series) \\
+							$\cdot$ Deep learning (artificial/recurrent/convolutional neural networks)
 \item [Frequently Used]     $\cdot$ Python, Tensorflow, Keras, LightGBM, \texttt{R}, SQL, Spark, jupyter, Vim, \LaTeX
 \item [Sometimes Used]      $\cdot$ Java, C++, HTML, CSS, Javascript
 \end{description}
@@ -143,8 +145,8 @@
 \begin{itemize}
     \item Estimated point and interval values of competitive intelligence metrics used in executive decision-making
     \item Engineered an ensemble of predictive models using internal and third-party data to identify rare user groups for multi-million dollar experiments; improved legacy model performance by a factor of 2
-	\item Analyzed the aforementioned experiments to identify statistically significant metrics, and dissected the limitations of the existing experimental design to improve future allocation of resources
-	\item Identified and corrected multiple errors and inefficiencies found in the team repository, ranging from production code to deliverables used by stakeholders
+    \item Analyzed the aforementioned experiments to identify statistically significant metrics, and dissected the limitations of the existing experimental design to improve future allocation of resources
+    \item Identified and corrected multiple errors and inefficiencies found in the team repository, ranging from production code to deliverables used by stakeholders
 \end{itemize}
 
 \blockbreak
@@ -154,15 +156,15 @@
 %%==================================================%%
 \textbf{Senior Data Scientist}, Data and Research \hfill \textit{\textbf{BitSight}, Boston, MA} \texttt{\enspace 10/2017-01/2020}
 \begin{itemize}
-	\item Led all data science projects for third-party cybersecurity risk management, including:
-		\begin{itemize}
-				\item Tier Recommender: BitSight's first machine learning based product that leverages unique network data
-				\item Enterprise Analytics: a product that computes and evaluates hypothetical risk scenarios for corporations
-				\item Fourth-Party Risk Management: a tool that provides visibility into business ecosystems
-		\end{itemize}
+    \item Led all data science projects for third-party cybersecurity risk management, including:
+        \begin{itemize}
+                \item Tier Recommender: BitSight's first machine learning based product that leverages unique network data
+                \item Enterprise Analytics: a product that computes and evaluates hypothetical risk scenarios for corporations
+                \item Fourth-Party Risk Management: a tool that provides visibility into business ecosystems
+        \end{itemize}
     \item Designed observational studies to evaluate the association and causality of relationships pertaining to efficacy of products, impact of extraneous events, and influence of internal interventions
-	\item Supervised Master's-level intern working on 1) validation of external financial data and 2) sales/marketing analytics
-	\item Organized reading groups covering advanced topics in forecasting, prediction intervals, and model evaluation
+    \item Supervised Master's-level intern working on 1) validation of external financial data and 2) sales/marketing analytics
+    \item Organized reading groups covering advanced topics in forecasting, prediction intervals, and model evaluation
 \end{itemize}
 
 \blockbreak
@@ -186,18 +188,18 @@
 
 \textbf{PhD, Biostatistics} \hfill \textit{\textbf{Harvard University}, Cambridge, MA} \texttt{\enspace 08/2012-09/2017}
 \begin{itemize}
-	  \item Conducted and published statistical research on applied problems in genetics, health care policy, and end-of-life care
-	  \item Developed novel methods and \texttt{R} code for handling sampling bias, misclassified outcomes, correlated outcomes, intractable cross-validation, hierarchical structures, and confounding
-	  \item Taught graduate-level classes in introductory statistics/epidemiology, statistical methods, and Bayesian statistics
+    \item Conducted and published statistical research on applied problems in genetics, health care policy, and end-of-life care
+    \item Developed novel methods and \texttt{R} code for handling sampling bias, misclassified outcomes, correlated outcomes, intractable cross-validation, hierarchical structures, and confounding
+    \item Taught graduate-level classes in introductory statistics/epidemiology, statistical methods, and Bayesian statistics
 \end{itemize}
 
 \vspace{3mm}
 
 \textbf{BMath, Statistics and Actuarial Science} \hfill \textit{\textbf{University of Waterloo}, Waterloo, ON, Canada} \texttt{\enspace 09/2007-06/2012}
 \begin{itemize}
-        \item Graduated with Distinction - Dean's Honours List (Highest Honors)
-		\item Completed six work semesters at Logitech, Hewitt Associates (now Blackstone), Manulife Financial, and Munich Re
-        \item Ren\'e Descartes National Scholar
+    \item Graduated with Distinction - Dean's Honours List (Highest Honors)
+    \item Completed six work semesters at Logitech, Hewitt Associates (now Blackstone), Manulife Financial, and Munich Re
+    \item Ren\'e Descartes National Scholar
 \end{itemize}
 
 \end{document}
