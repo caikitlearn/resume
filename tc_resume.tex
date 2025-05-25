@@ -1,7 +1,7 @@
-%%==================================================%%
-%%   PREAMBLE                                       %%
-%%==================================================%%
-\documentclass[10pt,english]{report}
+%------------------------------------------------------------------------------%
+%  PREAMBLE                                                                    %
+%------------------------------------------------------------------------------%
+\documentclass[10pt,english]{article}
 
 % packages
 \usepackage{geometry}
@@ -26,178 +26,170 @@
 \pagenumbering{gobble}
 
 \AtBeginDocument {
-    \def\labelitemi{\(\cdot\)}
-    \def\labelitemii{\(\cdot\)}
+  \def\labelitemi{\(\cdot\)}
+  \def\labelitemii{\(\cdot\)}
 }
 
 \newcommand\textbox[1] {%
-    \parbox{.3333333333\textwidth}{#1}%
+  \parbox{.3333333333\textwidth}{#1}%
 }
 
 \newcommand\halfbox[1] {%
-    \parbox{0.18\textwidth}{#1}%
+  \parbox{0.18\textwidth}{#1}%
 }
 
 \newcommand{\MONTH} {%
-    \ifcase\the\month
-    \or 01% 1
-    \or 02% 2
-    \or 03% 3
-    \or 04% 4
-    \or 05% 5
-    \or 06% 6
-    \or 07% 7
-    \or 08% 8
-    \or 09% 9
-    \or 10% 10
-    \or 11% 11
-    \or 12% 12
-    \fi
+  \ifcase\the\month
+  \or 01% 1
+  \or 02% 2
+  \or 03% 3
+  \or 04% 4
+  \or 05% 5
+  \or 06% 6
+  \or 07% 7
+  \or 08% 8
+  \or 09% 9
+  \or 10% 10
+  \or 11% 11
+  \or 12% 12
+  \fi
 }
 
 \newcommand{\sectionbreak} {
-    \vspace{5mm}
+  \vspace{5mm}
 }
 
 \newcommand{\blockbreak} {
-    \vspace{3mm}
+  \vspace{3mm}
 }
 
 \newenvironment{sectionhead}[1] {
-    {\centering{\Large{\textsc{#1}}}\par}
-    \vspace{1mm}\hrule
-    \vspace{1mm}
+  {\centering{\Large{\textsc{#1}}}\par}
+  \vspace{1mm}\hrule
+  \vspace{1mm}
 }
 
-%%==================================================%%
-%%   BEGIN DOCUMENT                                 %%
-%%==================================================%%
+%------------------------------------------------------------------------------%
+%  BEGIN DOCUMENT                                                              %
+%------------------------------------------------------------------------------%
 \begin{document}
 
 \noindent{
-    \makebox[0pt][l]{\hspace{0.2mm}\faLinkedin} \hspace{3.5mm}
-    \makebox[0pt][l]{\textcolor{blue}{\href{https://www.linkedin.com/in/taicai/}{\texttt{linkedin.com/in/taicai}}}} \hfill
-    \makebox[0pt][c]{\LARGE \textsc{-- Tai Cai, PhD --}} \hfill
-    \makebox[0pt][r]{Updated \texttt{\MONTH/\the\year}} \hspace{3.5mm}
-    \makebox[0pt][r]{\faClock} \par
+  \makebox[0pt][l]{\hspace{0.2mm}\faLinkedin} \hspace{3.5mm}
+  \makebox[0pt][l]{\textcolor{blue}{\href{https://www.linkedin.com/in/caikitlearn/}{\texttt{linkedin.com/in/caikitlearn}}}} \hfill
+  \makebox[0pt][c]{\LARGE \textsc{-- Tianyi Cai --}} \hfill
+  \makebox[0pt][r]{Updated \texttt{\MONTH/\the\year}} \hspace{3.5mm}
+  \makebox[0pt][r]{\faClock} \par
 }
 
 \noindent{
-    \makebox[0pt][l]{\faGithub} \hspace{3.5mm}
-    \makebox[0pt][l]{\textcolor{blue}{\href{https://github.com/caikitlearn}{\texttt{github.com/caikitlearn}}}} \hfill
-    \makebox[0pt][c]{\textcolor{blue}{\href{https://www.caikitlearn.github.io}{\texttt{caikitlearn.github.io}}}} \hfill
-    \makebox[0pt][r]{\textcolor{blue}{\href{mailto:tcai@mail.harvard.edu}{\texttt{tcai@mail.harvard.edu}}}} \hspace{3.5mm}
-    \makebox[0pt][r]{\faEnvelopeSquare\hspace{0.2mm}} \par
+  \makebox[0pt][l]{\faGithub} \hspace{3.5mm}
+  \makebox[0pt][l]{\textcolor{blue}{\href{https://github.com/caikitlearn}{\texttt{github.com/caikitlearn}}}} \hfill
+  \makebox[0pt][c]{\textcolor{blue}{\href{https://www.caikitlearn.github.io}{\texttt{caikitlearn.github.io}}}} \hfill
+  \makebox[0pt][r]{\textcolor{blue}{\href{mailto:tcai@mail.harvard.edu}{\texttt{tcai@mail.harvard.edu}}}} \hspace{3.5mm}
+  \makebox[0pt][r]{\faEnvelopeSquare\hspace{0.2mm}} \par
 }
 
 \noindent{
-    \makebox[0pt][l]{\faHackerrank} \hspace{3.5mm}
-    \makebox[0pt][l]{\textcolor{blue}{\href{https://hackerrank.com/caikitlearn}{\texttt{hackerrank.com/caikitlearn}}}} \hfill
-    \makebox[0pt][c]{Canadian Citizen | US Permanent Resident} \hfill
-    \makebox[0pt][r]{\texttt{(857) 998-8619}} \hspace{3.5mm}
-    \makebox[0pt][r]{\faPhoneSquare\hspace{0.2mm}} \par
+  \makebox[0pt][l]{\faHackerrank} \hspace{3.5mm}
+  \makebox[0pt][l]{\textcolor{blue}{\href{https://hackerrank.com/caikitlearn}{\texttt{hackerrank.com/caikitlearn}}}} \hfill
+  \makebox[0pt][c]{Canadian Citizen | US Permanent Resident} \hfill
+  \makebox[0pt][r]{\texttt{(857) 998-8619}} \hspace{3.5mm}
+  \makebox[0pt][r]{\faPhoneSquare*\hspace{0.2mm}} \par
 }
 
 \sectionbreak
 
-%%==================================================%%
-%%   SUMMARY SECTION                                %%
-%%==================================================%%
+%------------------------------------------------------------------------------%
+%  SUMMARY SECTION                                                             %
+%------------------------------------------------------------------------------%
 \begin{sectionhead}{Summary}\end{sectionhead}
 
-\begin{description}[style=multiline,leftmargin=0.75in]
-    \setlength\itemsep{1mm}
-    \item [Profile]               $\cdot$ Quantitative scientist with PhD + 7 years of tech industry experience in leveraging applied statistics, machine \\
-                                  {\color{white}$\cdot$} learning, and software engineering to influence high-level decision-making
-    \item [Expertise]    $\cdot$ Bayesian statistics (probabilistic programming, causal inference, hierarchical models, nonparametric methods) \\
-                                  $\cdot$ Classical statistics (statistical learning, experimental design, mixed models, time series) \\
-                                  $\cdot$ Machine learning (tree-based models, deep learning, theory) \\
-                                  $\cdot$ Cross-functional collaboration to develop and productionize data-driven products and insights
-    \item [Toolkit]       $\cdot$ Python, SQL, \texttt{R}, jupyter, Vim
+\begin{description}[style=multiline,leftmargin=0.6in]
+  \setlength\itemsep{1mm}
+  \item [Profile] $\cdot$ Quantitative scientist with PhD + 8 years of experience in leveraging classical and bayesian statistics, machine \\
+                  {\color{white}$\cdot$} learning, and software engineering to influence high-level decision-making
+  \item [Skills]  $\cdot$ Causal Inference: doubly robust estimators, quasi-experimental methods, causal machine learning \\
+                  $\cdot$ Machine learning: tabular/panel/text data, model selection/validation, deployment/monitoring \\
+                  $\cdot$ Experimentation: study design, power analysis, bandit algorithms \\
+                  $\cdot$ Cross-functional collaboration, stakeholder communication, model interpretability, technical leadership
+  \item [Toolkit] $\cdot$ Python, SQL, Spark, \texttt{R}, jupyter, \LaTeX
 \end{description}
 
 \sectionbreak
 
-%%==================================================%%
-%%   EXPERIENCE SECTION                             %%
-%%==================================================%%
+%------------------------------------------------------------------------------%
+%  EXPERIENCE SECTION                                                          %
+%------------------------------------------------------------------------------%
 \begin{sectionhead}{Experience}\end{sectionhead}
 
-%%==================================================%%
-%%   WAYMO                                          %%
-%%==================================================%%
-\textbf{Senior Data Scientist}, Planner Evaluation \hfill \textit{\textbf{Waymo}, New York, NY} \texttt{\enspace 11/2022-Present}
+%------------------------------------------------------------------------------%
+%  COINBASE                                                                    %
+%------------------------------------------------------------------------------%
+\textbf{Staff Applied Scientist}, Retail Trading \hfill \textbf{Coinbase}, New York, NY \texttt{\enspace 01/2025-Present}
 \begin{itemize}
-    \item Halved the family-wise error rate of experiments used to evaluate onboard software by successfully launching confidence interval adjustments in collaboration with front-end and back-end engineering teams
-    \item Pioneered the use of statistical power and minimum detectable effect throughout the broader Planner Evaluation team by authoring the API and writing supporting documentation
-    \item Provided statistical mentorship for teams across Waymo on topics such as resampling methods, type I/II error, and quantifying uncertainty; promoted better statistical fluency across Planner Evaluation by teaching a short course
+  \item Launched end-to-end retail trading churn models to proactively target users for Customer Experience and Customer Relationship Management strategies
+  \item Informed pricing strategies by identifying causal effects between short-term pricing interventions and long-term metrics using observational data and econometric methods
+  \item Formalized the job ladder for Applied Scientists at Coinbase, standardizing responsibilities, skills, and interview processes
 \end{itemize}
 
 \blockbreak
 
-%%==================================================%%
-%%   FACEBOOK                                       %%
-%%==================================================%%
-\textbf{Senior Research Data Scientist}, Quantitative Engineering \hfill \textit{\textbf{Meta}, New York, NY} \texttt{\enspace 02/2021-11/2022}
+%------------------------------------------------------------------------------%
+%  WAYMO                                                                       %
+%------------------------------------------------------------------------------%
+\textbf{Senior Data Scientist}, Planner Evaluation \hfill \textbf{Waymo}, New York, NY \texttt{\enspace 11/2022-01/2025}
 \begin{itemize}
-    \item Collaborated (with engineering, product, design, and UX research) as the scientific point of contact in a 100 person team to build, improve, and migrate users to infrastructure tools, doubling user engagement in the process
-    \item Served as the technical lead for the data team through multiple product and feature launches by providing mentorship, planning, and stakeholder management
-    \item Guided engineers to optimize the design of experiments intended to reduce latency in Core Infra services, yielding more principled decision-making
+  \item Halved the family-wise error rate of experiments used to evaluate onboard software using confidence interval adjustments
+  \item Pioneered the use of statistical power and minimum detectable effect throughout the broader Planner Evaluation team by authoring the API and writing supporting documentation
+  \item Provided statistical mentorship and workshops for teams across Waymo on topics such as resampling methods, type I/II error, and quantifying uncertainty
 \end{itemize}
 
 \blockbreak
 
-%%==================================================%%
-%%   UBER                                           %%
-%%==================================================%%
-\textbf{Applied Scientist II}, Global Intelligence \hfill \textit{\textbf{Uber}, San Francisco, CA} \texttt{\enspace 01/2020-02/2021}
+%------------------------------------------------------------------------------%
+%  FACEBOOK                                                                    %
+%------------------------------------------------------------------------------%
+\textbf{Senior Research Data Scientist}, Quantitative Engineering \hfill \textbf{Meta}, New York, NY \texttt{\enspace 02/2021-11/2022}
 \begin{itemize}
-    \item Estimated point and interval values of competitive intelligence metrics used in executive decision-making
-    \item Engineered an ensemble of machine learning models using internal and third-party data to identify rare user groups for multi-million dollar experiments; improved the legacy model by doubling precision
+  \item Doubled user engagement of infrastructure tools by collaborating with engineering, product, design, and UX research as the scientific point of contact in a 100 person team
+  \item Served as the technical lead for the data team through multiple product and feature launches by providing mentorship, planning, and stakeholder management
+  \item Guided engineers to optimize the design of experiments intended to reduce latency in Core Infra services, yielding more principled decision-making
 \end{itemize}
 
 \blockbreak
 
-%%==================================================%%
-%%   BITSIGHT                                       %%
-%%==================================================%%
-\textbf{Senior Data Scientist}, Data and Research \hfill \textit{\textbf{BitSight}, Boston, MA} \texttt{\enspace 10/2017-01/2020}
+%------------------------------------------------------------------------------%
+%  UBER                                                                        %
+%------------------------------------------------------------------------------%
+\textbf{Applied Scientist II}, Global Intelligence \hfill \textbf{Uber}, San Francisco, CA \texttt{\enspace 01/2020-02/2021}
 \begin{itemize}
-    \item Led all data science projects for third-party cybersecurity risk management, including BitSight's inaugural machine learning-based product, multiple analytical tools, and observational studies to evaluate internal processes
-    \item Supervised Master's-level intern working on validation of external financial data and sales/marketing analytics
+  \item Estimated point and interval values of competitive intelligence metrics used in executive decision-making
+  \item Engineered an ensemble of machine learning models using internal and third-party data to identify rare user groups for multi-million dollar experiments; improved the legacy model by doubling precision
 \end{itemize}
 
 \blockbreak
 
-%%==================================================%%
-%%   INSIGHT DATA SCIENCE                           %%
-%%==================================================%%
-\textbf{Technical Advisor} \hfill \textit{\textbf{Insight Data Science}, Boston, MA} \texttt{\enspace 06/2019-09/2019}
+%------------------------------------------------------------------------------%
+%  BITSIGHT                                                                    %
+%------------------------------------------------------------------------------%
+\textbf{Senior Data Scientist}, Data and Research \hfill \textbf{BitSight}, Boston, MA \texttt{\enspace 10/2017-01/2020}
 \begin{itemize}
-    \item Mentored data science projects for PhD graduates and postdoctoral fellows by providing weekly 1-on-1 feedback
+  \item Led all data science projects for third-party cybersecurity risk management, including BitSight's inaugural machine learning-based product, multiple analytical tools, and observational studies to evaluate internal processes
+  \item Supervised Master's-level intern working on validation of external financial data and sales/marketing analytics
 \end{itemize}
+
+\blockbreak
 
 \sectionbreak
 
-%%==================================================%%
-%%   EDUCATION SECTION                              %%
-%%==================================================%%
+%------------------------------------------------------------------------------%
+%  EDUCATION SECTION                                                           %
+%------------------------------------------------------------------------------%
 \begin{sectionhead}{Education}\end{sectionhead}
 
-\textbf{PhD, Biostatistics} \hfill \textit{\textbf{Harvard University}, Cambridge, MA} \texttt{\enspace 08/2012-09/2017}
-\begin{itemize}
-    \item Conducted and published statistical research on applied problems in genetics, health care policy, and end-of-life care
-    \item Developed novel methods and \texttt{R} code for handling confounding, sampling bias, misclassified and/or correlated outcomes, intractable cross-validation, and hierarchical structures
-    \item Taught graduate-level classes in Bayesian statistics, statistical methods, and introductory statistics/epidemiology
-\end{itemize}
+\textbf{PhD, Biostatistics} \hfill \textbf{Harvard University}, Cambridge, MA \texttt{\qquad\qquad\qquad 2017}
 
-\vspace{3mm}
-
-\textbf{BMath, Statistics and Actuarial Science} \hfill \textit{\textbf{University of Waterloo}, Waterloo, ON, Canada} \texttt{\enspace 09/2007-06/2012}
-\begin{itemize}
-    \item Ren\'e Descartes National Scholar; Graduated with Distinction - Dean's Honours List (Highest Honours)
-    \item Associate of the Society of Actuaries designation completed \texttt{03/2012}
-    \item Six work semesters at Logitech, Hewitt Associates, Manulife Financial, and Munich Re
-\end{itemize}
+\textbf{BMath, Statistics and Actuarial Science} \hfill \textbf{University of Waterloo}, Waterloo, ON, Canada \texttt{\qquad\qquad\qquad 2012}
 
 \end{document}
